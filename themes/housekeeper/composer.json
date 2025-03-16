@@ -1,0 +1,8 @@
+{
+    "name": "stdevs/hkr-theme",
+    "type": "october-theme",
+    "description": "Housekeeper",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

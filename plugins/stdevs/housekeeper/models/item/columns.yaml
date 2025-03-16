@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    is_saleable:
+        label: stdevs.housekeeper::lang.models.item.is_saleable
+        type: switch
+    name:
+        label: stdevs.housekeeper::lang.models.item.name
+    price_status:
+        label: stdevs.housekeeper::lang.models.item.price_status
+    price:
+        label: stdevs.housekeeper::lang.models.item.price
+    quantity:
+        label: stdevs.housekeeper::lang.models.item.quantity
+    condition:
+        label: stdevs.housekeeper::lang.models.item.condition
+    status:
+        label: stdevs.housekeeper::lang.models.item.status

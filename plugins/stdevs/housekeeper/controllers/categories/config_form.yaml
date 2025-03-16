@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/stdevs/housekeeper/models/category/fields.yaml
+
+# Model Class name
+modelClass: Stdevs\Housekeeper\Models\Category
+
+# Default redirect location
+defaultRedirect: stdevs/housekeeper/categories
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: stdevs/housekeeper/categories/update/:id
+    redirectClose: stdevs/housekeeper/categories
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: stdevs/housekeeper/categories
+    redirectClose: stdevs/housekeeper/categories
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

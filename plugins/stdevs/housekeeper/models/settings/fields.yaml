@@ -1,0 +1,20 @@
+fields:
+    _location_section:
+        label: stdevs.housekeeper::lang.models.settings.location_section
+        type: section
+        comment: stdevs.housekeeper::lang.models.settings.location_section_comment 
+    locations:
+        type: repeater
+        prompt: stdevs.housekeeper::lang.models.settings.location_prompt
+        form:
+            fields:
+                name:
+                    label: stdevs.housekeeper::lang.models.settings.location_name
+                    type: text
+                    span: left
+                slug:
+                    label: stdevs.housekeeper::lang.models.settings.location_slug
+                    type: text
+                    span: right
+                    preset: name
+                    readOnly: true

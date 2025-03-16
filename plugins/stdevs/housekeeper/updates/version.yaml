@@ -1,0 +1,5 @@
+v1.0.1: 
+    - First version of Housekeeper
+    - 1_0_1_create_items_table.php 
+    - 1_0_1_create_categories_table.php
+    - 1_0_1_seed_categories_table.php

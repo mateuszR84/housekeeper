@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14c625a9442beb454408e4165e1ae3b7",
+    "content-hash": "946ebf3c302f0754913d9316392a577e",
     "packages": [
         {
             "name": "brick/math",
@@ -4809,6 +4809,40 @@
                 }
             ],
             "time": "2024-05-24T10:39:05+00:00"
+        },
+        {
+            "name": "responsiv/currency-plugin",
+            "version": "v2.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://gateway.octobercms.com/composer/dist/responsiv/currency-plugin/responsiv-currency-plugin-22629c27d97991e4498a7d9b4f9b9f70e59c7937-zip-4cf190.zip",
+                "reference": "22629c27d97991e4498a7d9b4f9b9f70e59c7937",
+                "shasum": "693ffbd0ee3e0d595e53aa60d0d5e7955e537f52"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.5.9"
+            },
+            "type": "october-plugin",
+            "authors": [
+                {
+                    "name": "Samuel Georges",
+                    "email": "daftspunky@gmail.com"
+                }
+            ],
+            "description": "Currency plugin for October CMS",
+            "homepage": "https://octobercms.com/plugin/responsiv-currency",
+            "keywords": [
+                "cms",
+                "currency",
+                "october",
+                "responsiv"
+            ],
+            "support": {
+                "source": "https://github.com/responsiv/currency-plugin/tree/v2.1.0",
+                "issues": "https://github.com/responsiv/currency-plugin/issues"
+            },
+            "time": "2025-02-03T19:06:57+00:00"
         },
         {
             "name": "scssphp/scssphp",

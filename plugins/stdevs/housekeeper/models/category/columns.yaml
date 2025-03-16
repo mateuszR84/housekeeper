@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: stdevs.housekeeper::lang.models.category.name 
+        searchable: true
+    items_count:
+        label: stdevs.housekeeper::lang.models.category.items 
+        sortable: false

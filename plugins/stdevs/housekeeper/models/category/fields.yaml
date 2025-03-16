@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: stdevs.housekeeper::lang.models.category.name 
+        placeholder: stdevs.housekeeper::lang.models.category.name_placeholder
+        span: left
+
+    slug:
+        label: stdevs.housekeeper::lang.models.category.slug 
+        span: right
+        placeholder: stdevs.housekeeper::lang.models.category.slug_placeholder
+        preset: name
+
+    description:
+        label: stdevs.housekeeper::lang.models.category.description 
+        size: large
+        oc.commentPosition: ''
+        span: full
+        type: richeditor

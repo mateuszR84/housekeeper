@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Item
+
+# Model Form Field configuration
+form: $/stdevs/housekeeper/models/item/fields.yaml
+
+# Model Class name
+modelClass: Stdevs\Housekeeper\Models\Item
+
+# Default redirect location
+defaultRedirect: stdevs/housekeeper/items
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: stdevs/housekeeper/items/update/:id
+    redirectClose: stdevs/housekeeper/items
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: stdevs/housekeeper/items
+    redirectClose: stdevs/housekeeper/items
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

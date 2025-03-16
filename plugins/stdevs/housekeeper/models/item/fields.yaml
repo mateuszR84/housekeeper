@@ -1,0 +1,111 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    is_saleable:
+        label: stdevs.housekeeper::lang.models.item.is_saleable
+        type: switch
+        span: left
+        default: true
+    name:
+        label: stdevs.housekeeper::lang.models.item.name
+        type: text
+        span: left
+    slug:
+        label: stdevs.housekeeper::lang.models.item.slug
+        type: text
+        span: right
+        readOnly: true
+        preset: name
+
+tabs:
+    icons:
+        stdevs.housekeeper::lang.models.item.tab_categories: 
+            icon-list
+        stdevs.housekeeper::lang.models.item.tab_images:
+            icon-image
+        stdevs.housekeeper::lang.models.item.tab_manage:
+            icon-info-circle
+    lazy:
+        - stdevs.housekeeper::lang.models.item.tab_categories
+        - stdevs.housekeeper::lang.models.item.tab_images
+    stretch: true
+    fields:
+        _price_section:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.price_section
+            type: section 
+            
+        price_status:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.price_status
+            type: balloon-selector
+            default: tbd
+            span: left
+        price:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.price
+            type: currency
+            span: right
+            trigger:
+                action: show
+                condition: value[fixed]
+                field: price_status
+        _ruler1:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            type: ruler
+
+        quantity:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.quantity
+            type: number
+            span: left
+            step: 1
+        condition:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.condition
+            emptyOption: stdevs.housekeeper::lang.models.item.empty_option
+            type: dropdown
+            span: left
+        status:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.status
+            emptyOption: stdevs.housekeeper::lang.models.item.empty_option
+            type: dropdown
+            span: right
+
+        _ruler2:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            type: ruler
+        _location_hint:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.location_hint
+            comment: stdevs.housekeeper::lang.models.item.location_hint_comment
+            type: hint
+            mode: info
+        location:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.location
+            type: dropdown
+            emptyOption: stdevs.housekeeper::lang.models.item.empty_option
+            span: full
+        _ruler3:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            type: ruler
+
+        description:
+            tab: stdevs.housekeeper::lang.models.item.tab_manage
+            label: stdevs.housekeeper::lang.models.item.description
+            type: richeditor
+            span: full
+        
+        categories:
+            tab: stdevs.housekeeper::lang.models.item.tab_categories
+            type: relation
+
+        images:
+            tab: stdevs.housekeeper::lang.models.item.tab_images
+            label: stdevs.housekeeper::lang.models.item.images
+            type: fileupload
+            span: full
