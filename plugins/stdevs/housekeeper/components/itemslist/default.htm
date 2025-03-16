@@ -1,0 +1,42 @@
+{% set items = __SELF__.items %}
+
+<div class="row">
+    {% for item in items %}
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <a href="{{ 'item'|page }}">
+            <div class="card text-dark card-has-bg click-col">
+                {# <img class="card-img d-none" src="" alt=""> #}
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="card-body">
+                        <small class="card-meta mb-2">{{ item.categories[0].name }}</small>
+                        <h4 class="card-title mt-0">
+                            {{ item.name }}
+                        </h4>
+                        <small><i class="far fa-clock"></i> {{ item.created_at|date('d M Y') }}</small>
+                    </div>
+                    <div class="card-footer">
+                        <div class="media">
+                            <img class="mr-3 rounded-circle"
+                                 src="https://assets.codepen.io/460692/internal/avatars/users/default.png?format=auto&version=1688931977&width=80&height=80"
+                                 alt=""
+                                 style="max-width:50px">
+                            <div class="media-body">
+                                <h6 class="my-0 text-dark d-block">Oz Coruhlu</h6>
+                                <small>Director of UI/UX</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="price">
+                                <i class="fa-solid fa-money-bill"></i> {{ item.price|currency }}
+                            </span>
+                            <span class="quantity">
+                                <i class="fa-solid fa-layer-group"></i> {{ item.quantity }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    {% endfor %}
+</div>

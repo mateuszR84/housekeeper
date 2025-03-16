@@ -21,7 +21,7 @@ class Plugin extends PluginBase
             'name' => 'Housekeeper',
             'description' => 'No description provided yet...',
             'author' => 'Stdevs',
-            'icon' => 'icon-leaf'
+            'icon' => 'icon-cubes'
         ];
     }
 
@@ -46,10 +46,8 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'Stdevs\Housekeeper\Components\MyComponent' => 'myComponent',
+            'Stdevs\Housekeeper\Components\ItemsList' => 'itemsList',
         ];
     }
 
